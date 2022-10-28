@@ -4,7 +4,6 @@ def menu():
     print("2. Nombre de mots")
     print("3. Nombre de conjonction de coordination")
 
-car = [ 'mais' , 'ou' , 'et' , 'donc' , 'or' , "ni" , 'car' ]
 def freq(filename):
    with open(filename) as file:
     text = file.read()
@@ -16,7 +15,7 @@ def freq(filename):
     ni = sum(mot.endswith("ni") for mot in text.split())
     car = sum(mot.endswith("car") for mot in text.split())
 
-    summe = sum([mais, ou, et,donc,o, ni, car])
+    summe = sum([mais, ou, et, donc, o, ni, car])
     print(summe)
     
 
